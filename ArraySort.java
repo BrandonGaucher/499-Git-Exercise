@@ -5,6 +5,7 @@ public class ArraySort {
     public static void main(String[] args) {
 
         int[] numArray = { 2, 9, -7, 100, 40, 5 };
+        String[] stringArray = { "Brandon", "Zoe", "Joe", "Carl" };
         int temp;
 
         // sorting integer
@@ -28,6 +29,19 @@ public class ArraySort {
             System.out.print(numArray[i] + ", ");
         }
         System.out.print(numArray[numArray.length - 1]);
+
+        // sorting string array.
+
+        System.out.println("the original string  array is: ");
+        for (String str : stringArray) {
+            System.out.println(str + " ");
+
+        }
+        Arrays.sort(stringArray);
+        System.out.println("The sorted string Array is: ");
+        for (String str : stringArray) {
+            System.out.println(str + " ");
+        }
 
     }
 
